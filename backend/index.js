@@ -22,6 +22,12 @@ app.post('/books', async (request, response) => {
                 message: 'Send all required fields: title, author, publishYear'
             });
         }
+        // Create new variable for new book
+        const newBook = {
+            title: request.body.title,
+            author: request.body.author,
+            publishYear: request.body.publishYear,
+        };
         
     } catch (error) {
         console.log(error.message);
