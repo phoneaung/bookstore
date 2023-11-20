@@ -92,7 +92,7 @@ app.put('/books/:id', async (request, response) => {
 
         const result = await Book.findByIdAndUpdate(id, request.body);
 
-        if(!request) {
+        if(!result) {
             return response.status(404).send({
                 message: 'Book not found!',
             })
