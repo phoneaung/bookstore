@@ -6,17 +6,14 @@ import ShowBooks from './pages/ShowBooks';
 import EditBook from './pages/EditBook';
 import DeleteBooks from './pages/DeleteBooks';
 
-
-
-
 export const App = () => {
   return (
     <Routes>
-      <Route path='' element={}></Route>
-      <Route path='' element={}></Route>
-      <Route path='' element={}></Route>
-      <Route path='' element={}></Route>
-      <Route path='' element={}></Route>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/books/:id' element={<CreateBooks />}></Route>
+      <Route path='/books/:id' element={<ShowBooks />}></Route>
+      <Route path='/books/:id' element={<EditBook />}></Route>
+      <Route path='/books/:id' element={<DeleteBooks />}></Route>
     </Routes>
   )
 }
