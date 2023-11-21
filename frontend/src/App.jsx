@@ -2,6 +2,8 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <div>App</div>
+    <div className='bg-red-400 text-white'>App</div>
   )
 }
+
+export default App
